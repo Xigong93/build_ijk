@@ -16,7 +16,7 @@ RUN apt update\
 RUN wget https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip\
     && unzip -o sdk-tools-linux-3859397.zip -d /opt/android_sdk
 RUN wget https://dl.google.com/android/repository/android-ndk-r14b-linux-x86_64.zip\
-    && unzip -o android-ndk-r14b-linux-x86_64.zip -d /opt/android_ndk_r14b
+    && unzip -o android-ndk-r14b-linux-x86_64.zip -d /opt/
 
 COPY build_ijk.sh /app/
 WORKDIR /app
