@@ -22,4 +22,4 @@ RUN wget https://dl.google.com/android/repository/android-ndk-r14b-linux-x86_64.
 
 COPY build_ijk.sh /app/
 WORKDIR /app
-CMD sdkmanager --version
+ENTRYPOINT["sh","build_ijk.sh"]
