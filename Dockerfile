@@ -24,5 +24,6 @@ RUN apt update\
   && apt autoremove
 
 COPY build_ijk.sh /app/
+COPY build_ijk_zn.sh /app/
 WORKDIR /app
 #ENTRYPOINT ./build_ijk.sh
