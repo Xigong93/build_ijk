@@ -1,0 +1,12 @@
+sudo: required
+
+language: android
+services:
+ - docker
+
+before_install:
+ - docker build -t build_ijk .
+ 
+script:
+ - docker run -v $PWD/data:/data build_ijk /bin/sh -c "cp /app/build_ijk.sh /data/ ; cd /data ; ./build_ijk.sh"
+ # - docker run -v $PWD/data:/data build_ijk /bin/sh -c "cp /app/build_ijk_zn.sh /data/ ; cd /data ; ./build_ijk_zn.sh"
