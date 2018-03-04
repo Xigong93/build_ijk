@@ -4,7 +4,8 @@
 
 ### 1. 运行docker image
 ```shell
-docker run -i -t -v $PWD/data:/data pokercc/build_ijk bash
+# docker run -i -t -v $PWD/data:/data pokercc/build_ijk:<lastTag> bash
+  docker run -i -t -v $PWD/data:/data pokercc/build_ijk:1.3 bash
 ```
 会在当前目录的data 目录中，拉取ijkplayer 源码并执行编译
 
