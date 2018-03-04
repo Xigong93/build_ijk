@@ -5,7 +5,7 @@
 ### 1. 运行docker image
 ```shell
 # docker run -i -t -v $PWD/data:/data pokercc/build_ijk:<lastTag> bash
-  docker run -i -t -v $PWD/data:/data pokercc/build_ijk:1.3 bash
+  docker run -i -t -v $PWD/data:/data pokercc/build_ijk:1.4 bash
 ```
 会在当前目录的data 目录中，拉取ijkplayer 源码并执行编译
 
@@ -27,6 +27,7 @@ cp /app/build_ijk_zn.sh /data/ &&cd /data && ./build_ijk_zn.sh
 libijk.so 等几个so文件
 ```shell
 ls $PWD/data/ijkplayer-android/android/ijkplayer/ijkplayer-armv7a/src/main/libs/armeabi-v7a
+> libijkffmpeg.so  libijkplayer.so  libijksdl.so
 
 ```
 
