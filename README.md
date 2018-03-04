@@ -1,3 +1,4 @@
+![](https://travis-ci.org/pokercc/build_ijk.svg?branch=master)
 # 使用docker 镜像，编译ijkplayer，android 版本
 
 ## 使用docker image ,编译ijkplayer步骤
