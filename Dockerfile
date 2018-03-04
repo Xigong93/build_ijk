@@ -25,5 +25,9 @@ RUN apt update\
 
 COPY build_ijk.sh /app/
 COPY build_ijk_zn.sh /app/
+
+# 修改dash 为bash
+RUN ln -fs /bin/bash /bin/sh
+
 WORKDIR /app
 #ENTRYPOINT ./build_ijk.sh
